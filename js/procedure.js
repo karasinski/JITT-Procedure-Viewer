@@ -213,13 +213,13 @@ function buildProcedure(steps, parent, depth) {
     var procID = parent + '_' + index
 
     if (step.type == 'image') {
-      $('<li id="' + procID + '">' + '<img class="proc_image" src="' + step.text.substr(1) + '"></li>' + '</li>').appendTo('ul#' + parent)
+      $('<li id="' + procID + '">' + '<img class="proc_image info" src="' + step.text.substr(1) + '"></li>' + '</li>').appendTo('ul#' + parent)
     } else if (step.type == 'video') {
-      $('<li id="' + procID + '">' + step.text + '</li>' + '</li>').appendTo('ul#' + parent)
+      $('<li id="' + procID + '"><div class="info">' + step.text + '</div></li>' + '</li>').appendTo('ul#' + parent)
     } else if (step.type == 'caution') {
-      $('<li id="' + procID + '" class="caution">' + step.text + '</li>').appendTo('ul#' + parent)
+      $('<li id="' + procID + '" class="caution"><div class="info">' + step.text + '</div></li>').appendTo('ul#' + parent)
     } else {
-      $('<li id="' + procID + '">' + step.text + '</li>').appendTo('ul#' + parent)
+      $('<li id="' + procID + '"><div class="info">' + step.text + '</div></li>').appendTo('ul#' + parent)
     }
     if (step.subtasks != undefined) {
       $('<ul id="' + procID + '"></ul').appendTo('li#' + procID);
