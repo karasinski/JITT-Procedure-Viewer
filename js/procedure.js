@@ -7,8 +7,12 @@ var proc = {
         "subtasks": [{
           "text": "Check ENGINE SWITCH – OFF (Audible Call Out)"
         }, {
+          "caption": "This is some text that describes the figure that is placed directly below it.",
           "text": "/img/figures/Fig1.png",
-          "type": "image"
+          "type": "image_and_text",
+          "subtasks": [{
+            "text": "1.1.1 This is some text underneath the fancy image and text type which Ryan requested."
+          }]
         }]
       }, {
         "text": "1.2.    Unplug all power cords from CONTROL PANEL",
