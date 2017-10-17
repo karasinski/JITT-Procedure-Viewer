@@ -135,11 +135,12 @@ function prepareList() {
     writer.close();
   };
 
-  $(window).keypress(function(e) {
+  $(window).keyup(function(e) {
     if (event.key == 's') down();
     if (event.key == 'w') up();
     if (event.key == 'p') beginExperiment();
     if (event.key == 'q') endExperiment();
+    e.preventDefault();
   });
   $('#down')
     .unbind('click')

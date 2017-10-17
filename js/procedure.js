@@ -28,7 +28,6 @@ var proc = {
         "text": "/img/figures/SparkCover_Location.png",
         "type": "image_and_text",
         "subtasks": [{
-        }, {
           "text": "1.4.1.  Remove the Spark Plug Cover in order to access the Spark Plug Cap."
         }, {
           "text": "/img/figures/SparkCover_Removal.png",
@@ -44,11 +43,11 @@ var proc = {
           "text": "/img/figures/SparkCap_Resting.png",
           "type": "image"
         }]
-      }
+      }]
     },
 
     {
-      "text": "2.  Remove Air Cleaner Assembly",
+      "text": "2.  REMOVE AIR CLEANER ASSEMBLY",
       "subtasks": [{
         "caption": "2.1.    Remove the Maintenance Cover.",
         "text": "/img/figures/MaintenanceCover_Location.png",
@@ -252,7 +251,7 @@ var proc = {
           "type": "image"
         }]
       }, {
-        "caption": "4.2.    Remove the Float Chamber Gasket.".
+        "caption": "4.2.    Remove the Float Chamber Gasket.",
         "text": "/img/figures/FloatGasket_Location.png",
         "type": "image_and_text",
         "subtasks": [{
@@ -478,18 +477,18 @@ var proc = {
         "subtasks": [{
           "text": "7.4.1.  Replace the Spark Plug Cap."
         }, {
-          "text": "/img/figures/SparkCap_Replace",
+          "text": "/img/figures/SparkCap_Replace.png",
           "type": "image"
         }, {
           "text": "7.4.2.  Replace the Spark Plug Cover."
         }, {
-          "text": "/img/figures/SparkCover_Replace",
+          "text": "/img/figures/SparkCover_Replace.png",
           "type": "image"
         }]
       }]
     }
   ]
-}
+};
 
 function buildProcedure(steps, parent, depth) {
   steps.forEach(function(step, index) {
