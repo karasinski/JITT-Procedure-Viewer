@@ -150,7 +150,7 @@ var proc = {
         }, {
           "text": "3.2.3.  Tighten the Carburetor Drain Screw using a Flat Head Screwdriver."
         }, {
-          "text": "Remove the Gasoline Container."
+          "text": "3.2.4.  Remove the Gasoline Container."
         }]
       }, {
         "caption": "3.3.    Detach the Carburetor Fuel Tube from the Carburetor.",
@@ -368,7 +368,7 @@ var proc = {
       }, {
         "caption": "6.2.    Reattach the Carburetor Fuel Tube.",
         "text": "/img/figures/FuelTube_Detached.png",
-        "type": "image",
+        "type": "image_and_text",
         "subtasks": [{
           "text": "6.2.1.  Push the Carburetor Fuel Tube onto the Carburetor fitting."
         }, {
@@ -409,7 +409,7 @@ var proc = {
       "subtasks": [{
         "caption": "7.1.    Replace the Air Intake Joint Gasket and Air Cleaner Case.",
         "text": "/img/figures/CaseGasket_Labeled.png",
-        "type": "image", 
+        "type": "image_and_text", 
         "subtasks": [{
           "text": "7.1.1.  Slide the Air Intake Joint Gasket onto the bolts attached to the Generator."
         }, {
@@ -423,7 +423,7 @@ var proc = {
         }, {
           "caption": "7.1.3.  Replace the 8mm Center Bolt and Flange Nuts securing the Air Cleaner Case to the Generator.",
           "text": "/img/figures/AirCaseNutsBolts_Replace.png",
-          "type": "image",
+          "type": "image_and_text",
           "subtasks": [{
             "text": "7.1.3.1.  Replace these using the Ratcheting Socket Wrench and Socket Set. The 8mm Hex Sockets attaches to the Ratchet through the supplied ¼” Drive."
           }]
@@ -431,7 +431,7 @@ var proc = {
       }, {
         "caption": "6.2.    Reattach the Breather Tube and replace the Air Filters and Air Cleaner Cover.",
         "text": "/img/figures/AirFiltersCover_Labeled.png",
-        "type": "image",
+        "type": "image_and_text",
         "subtasks": [{
           "text": "7.2.1.  Reattach the Breather Tube to the Air Cleaner Case."
         }, {
@@ -453,7 +453,7 @@ var proc = {
         }, {
           "caption": "7.2.4.  Tighten the Air Cleaner Cover Screw.",
           "text": "/img/figures/AirScrew_Location.png",
-          "type": "image",
+          "type": "image_and_text",
           "subtasks": [{
             "text": "7.2.4.1.  Use a Flat Head Screwdriver to tighten the Air Cleaner Cover Screw."
           }]
@@ -461,11 +461,11 @@ var proc = {
       }, {
         "caption": "7.3.    Replace the Maintenance Cover.",
         "text": "/img/figures/MaintenanceCover_Replace.png",
-        "type": "image",
+        "type": "image_and_text",
         "subtasks": [{
           "caption": "7.3.1.  Tighten the Maintenance Cover Screw.",
           "text": "/img/figures/MaintenanceScrew_Location.png",
-          "type": "image",
+          "type": "image_and_text",
           "subtasks": [{
             "text": "7.3.1.1.  Use a Flat Head Screwdriver to tighten the Maintenance Cover Screw."
           }]
@@ -473,7 +473,7 @@ var proc = {
       }, {
         "caption": "7.4.    Replace the Spark Plug Cap and Spark Plug Cover.",
         "text": "/img/figures/SparkCoverCap_Labeled.png",
-        "type": "image",
+        "type": "image_and_text",
         "subtasks": [{
           "text": "7.4.1.  Replace the Spark Plug Cap."
         }, {
