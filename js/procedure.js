@@ -429,7 +429,7 @@ var proc = {
           }]
         }]
       }, {
-        "caption": "6.2.    Reattach the Breather Tube and replace the Air Filters and Air Cleaner Cover.",
+        "caption": "7.2.    Reattach the Breather Tube and replace the Air Filters and Air Cleaner Cover.",
         "text": "/img/figures/AirFiltersCover_Labeled.png",
         "type": "image_and_text",
         "subtasks": [{
