@@ -11,7 +11,7 @@
 }
 
 body {
-    background-color: #AAAAAA;
+    background-color: #FFE4C2;
     font-size: 16px;
 }
 
@@ -38,6 +38,7 @@ body {
     margin: 0;
     padding: 0;
     cursor: pointer;
+    padding-left: 20px;
 }
 
 #expList p {
@@ -52,8 +53,9 @@ body {
 .info {
     width: max-content;
     max-width: 75%;
-    border: 2px solid #AAAAAA;
+    border: 2px solid #FFE4C2;
     padding: 1px;
+    font-size: 14pt;
 }
 
 #expList li {
@@ -84,8 +86,8 @@ body {
 }
 
 .listControl a {
-    border: 1px solid #555555;
-    color: #555555;
+    border: 1px solid #333333;
+    color: #333333;
     cursor: pointer;
     height: 1.5em;
     line-height: 1.5em;
@@ -94,14 +96,14 @@ body {
 }
 
 .listControl a:hover {
-    background-color: #555555;
+    background-color: #333333;
     color: #222222;
     font-weight: normal;
 }
 
 .proc_image {
-    max-width: 300px;
-    max-height: 300px;
+    max-width: 400px;
+    max-height: 400px;
 }
 
 .caution > .info {
