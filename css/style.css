@@ -109,3 +109,8 @@ body {
 .caution > .info {
     background-color: yellow;
 }
+
+video {
+    width: 400px !important;
+    max-height: 400px !important;
+}

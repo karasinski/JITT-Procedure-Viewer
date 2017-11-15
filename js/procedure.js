@@ -28,20 +28,17 @@ var proc = {
         "text": "/img/figures/SparkCover_Location.png",
         "type": "image_and_text",
         "subtasks": [{
-          "text": "1.4.1.  Remove the Spark Plug Cover in order to access the Spark Plug Cap."
-        }, {
+          "caption": "1.4.1.  Remove the Spark Plug Cover in order to access the Spark Plug Cap.",
           "text": "/img/figures/SparkCover_Removal.png",
-          "type": "image"
+          "type": "image_and_text"
         }, {
-          "text": "1.4.2.  Remove the Spark Plug Cap."
-        }, {
+          "caption": "1.4.2.  Remove the Spark Plug Cap.",
           "text": "/img/figures/SparkCap_Removal.png",
-          "type": "image"
+          "type": "image_and_text"
         }, {
-          "text": "1.4.3.  Rest the cap on the outside of the Generator and away from the Spark Plug."
-        }, {
+          "caption": "1.4.3.  Rest the cap on the outside of the Generator and away from the Spark Plug.",
           "text": "/img/figures/SparkCap_Resting.png",
-          "type": "image"
+          "type": "image_and_text"
         }]
       }]
     },
@@ -60,10 +57,9 @@ var proc = {
             "text": "2.1.1.1.  Use a Flat Head Screwdriver to loosen the Maintenance Cover Screw. The screw is a captive screw and does not fully remove from the cover itself."
           }]
         }, {
-          "text": "2.1.2.  Remove the Maintenance Cover."
-        }, {
+          "caption": "2.1.2.  Remove the Maintenance Cover.",
           "text": "/img/figures/MaintenanceCover_Removal.png",
-          "type": "image"
+          "type": "image_and_text"
         }]
       }, {
         "caption": "2.2.    Remove the Air Cleaner Cover and Air Filters.",
@@ -81,10 +77,9 @@ var proc = {
         }, {
           "text": "2.2.3.  Remove the Air Filters.",
           "subtasks": [{
-            "text": "2.2.3.1.  Pull out both of the Air Filters by hand: the Main Filter (larger, upper filter) and the Outer Filter (small, lower filter)."
-          }, {
+            "caption": "2.2.3.1.  Pull out both of the Air Filters by hand: the Main Filter (larger, upper filter) and the Outer Filter (small, lower filter).",
             "text": "/img/figures/AirFilters_Labeled.png",
-            "type": "image"
+            "type": "image_and_text"
           }]
         }]  
       }, {
@@ -97,7 +92,8 @@ var proc = {
         "subtasks": [{
           "text": "2.3.1.  Wrap the Breather Tube in the Rag and grip the Rag and Breather Tube with the Pliers. Gently tug down and away from the Air Cleaner Case with the Pliers while prying the end of the Breather Tube away from the Air Cleaner Case with the Flat Head Screwdriver."
         }, {
-          "text": "VIDEO OF BREATHER TUBE REMOVAL PROCESS",
+          "text": "/vid/Breather_Removal.mp4",
+          "type": "video"
         }]
       }, {
         "caption": "2.4.    Remove the Air Cleaner Case and Air Intake Joint Gasket.",
@@ -111,15 +107,13 @@ var proc = {
             "text": "2.4.1.1.  Remove these using the Ratcheting Socket Wrench and Socket Set. The 8mm Hex Sockets attaches to the Ratchet through the supplied ¼” Drive."
           }]
         }, {
-          "text": "2.4.2.  Slide the Air Cleaner Case off of the bolts attached to the Generator."
-        }, {
+          "caption": "2.4.2.  Slide the Air Cleaner Case off of the bolts attached to the Generator.",
           "text": "/img/figures/AirCase_Removal.png",
-          "type": "image" 
+          "type": "image_and_text" 
         }, {
-          "text": "2.4.3.  Slide the Air Intake Joint Gasket off of the bolts attached to the Generator."
-        }, {
+          "caption": "2.4.3.  Slide the Air Intake Joint Gasket off of the bolts attached to the Generator.",
           "text": "/img/figures/AirGasket_Removal.png",
-          "type": "image"
+          "type": "image_and_text"
         }]
       }]
     },
@@ -131,10 +125,9 @@ var proc = {
         "text": "/img/figures/FuelTube_Location.png",
         "type": "image_and_text",
         "subtasks": [{
-          "text": "3.1.1.  Clamp the Carburetor Fuel Tube on the right end of the tube that is furthest from the Carburetor using the Hose Pinching Pliers."
-        }, {
+          "caption": "3.1.1.  Clamp the Carburetor Fuel Tube on the right end of the tube that is furthest from the Carburetor using the Hose Pinching Pliers.",
           "text": "/img/figures/FuelTube_Clamped.png",
-          "type": "image"
+          "type": "image_and_text"
         }]
       }, {
         "caption": "3.2.    Loosen the Carburetor Drain Screw and drain fuel into the Gasoline Container.",
@@ -143,10 +136,9 @@ var proc = {
         "subtasks": [{
           "text": "3.2.1.  Put the Gasoline Container under the Carburetor Drain Tube."
         }, {
-          "text": "3.2.2.  Slightly loosen the Carburetor Drain Screw using a Flat Head Screwdriver."
-        }, {
+          "caption": "3.2.2.  Slightly loosen the Carburetor Drain Screw using a Flat Head Screwdriver.",
           "text": "/img/figures/DrainScrew_Location.png",
-          "type": "image"
+          "type": "image_and_text"
         }, {
           "text": "3.2.3.  Tighten the Carburetor Drain Screw using a Flat Head Screwdriver."
         }, {
@@ -168,7 +160,8 @@ var proc = {
           }, {
             "text": "3.3.1.2.  Pry the Carburetor Fuel Tube from the Carburetor fitting using a Flat Head Screwdriver."
           }, {
-            "text": "VIDEO OF FUEL TUBE REMOVAL PROCESS"
+            "text": "/vid/TensionClamp_Removal.mp4",
+            "type": "video"
           }]
         }]
       }, {
@@ -176,10 +169,9 @@ var proc = {
         "text": "/img/figures/DrainTube_Location.png",
         "type": "image_and_text",
         "subtasks": [{
-          "text": "3.4.1.  Pull the bottom of the Carburetor Drain Tube up and out of the Generator housing."
-        }, {
+          "caption": "3.4.1.  Pull the bottom of the Carburetor Drain Tube up and out of the Generator housing.",
           "text": "/img/figures/DrainTube_Removal.png",
-          "type": "image"
+          "type": "image_and_text"
         }, {
           "caption": "3.4.2.  Remove the Carburetor Drain Tube from its fitting on the Carburetor Bowl.",
           "text": "/img/figures/DrainTubeFitting_Location.png",
@@ -195,29 +187,25 @@ var proc = {
         "subtasks": [{
           "text": "3.5.1.  Detach the Right Hand Vent Tube from the Carburetor.",
           "subtasks": [{
-            "text": "3.5.1.1.  Pull the Right Hand Vent Tube downwards and out of its connection. Leave it in place once disconnected."
-          }, {
+            "caption": "3.5.1.1.  Pull the Right Hand Vent Tube downwards and out of its connection. Leave it in place once disconnected.",
             "text": "/img/figures/VentRight_Detached.png",
-            "type": "image"
+            "type": "image_and_text"
           }]
         }, {
           "text": "3.5.2.  Detach the Left Hand Vent Tube from the Carburetor.",
           "subtasks": [{
-            "text": "3.5.2.1.  Use a Flat Head Screwdriver to pry the tube off of the fitting. Leave it in place once disconnected."
-          }, {
+            "caption": "3.5.2.1.  Use a Flat Head Screwdriver to pry the tube off of the fitting. Leave it in place once disconnected.",
             "text": "/img/figures/VentLeft_Detached.png",
-            "type": "image"
+            "type": "image_and_text"
           }]
         }, {
-          "text": "3.5.3.  Pull the Vent Tubes down and out of the other tubes covering them."
-        }, {
+          "caption": "3.5.3.  Pull the Vent Tubes down and out of the other tubes covering them.",
           "text": "/img/figures/VentTubes_Clear.png",
-          "type": "image"
+          "type": "image_and_text"
         }, {
-          "text": "3.5.4.  Pull the connection point of the Vent Tubes up and out of the Generator housing."
-        }, {
+          "caption": "3.5.4.  Pull the connection point of the Vent Tubes up and out of the Generator housing.",
           "text": "/img/figures/VentTubes_Removal.png",
-          "type": "image"
+          "type": "image_and_text"
         }]
       }, {
         "caption": "3.6.    Remove the Carburetor.",
@@ -245,10 +233,9 @@ var proc = {
         }, {
           "text": "4.1.2.  Take the Float Chamber off of the Carburetor assembly."
         }, {
-          "text": "4.1.3.  Turn the Float Chamber over and inspect it for any deposits or debris."
-        }, {
+          "caption": "4.1.3.  Turn the Float Chamber over and inspect it for any deposits or debris.",
           "text": "/img/figures/FloatChamber_Inspect.png",
-          "type": "image"
+          "type": "image_and_text"
         }]
       }, {
         "caption": "4.2.    Remove the Float Chamber Gasket.",
@@ -271,10 +258,9 @@ var proc = {
         "subtasks": [{
           "text": "4.4.1.  Lift the Float up and off of the Carburetor assembly."
         }, {
-          "text": "4.4.2.  Inspect the Float Valve Tip for wear."
-        }, {
+          "caption": "4.4.2.  Inspect the Float Valve Tip for wear.",
           "text": "/img/figures/FloatValve_Inspect.png",
-          "type": "image"
+          "type": "image_and_text"
         }, {
           "caption": "4.4.3.  Inspect the Float Valve Spring for operation.",
           "text": "/img/figures/FloatSpring_Location.png",
@@ -295,25 +281,22 @@ var proc = {
         "text": "/img/figures/Float_Replace.png",
         "type": "image_and_text",
         "subtasks": [{
-          "text": "5.1.1.  Align the joint holes on the Float with the joint holes on the Carburetor assembly."
-        }, {
+          "caption": "5.1.1.  Align the joint holes on the Float with the joint holes on the Carburetor assembly.",
           "text": "/img/figures/FloatPin_Align.png",
-          "type": "image"
+          "type": "image_and_text"
         }, {
           "text": "5.1.2.  Insert the Float Securing Pin into the aligned joint holes."
         }]
       }, {
         "text": "5.2.    Reinsert the Float Chamber Gasket and Reattach the Float Chamber.",
         "subtasks": [{
-          "text": "5.2.1.  Reinsert the Float Chamber Gasket."
-        }, {
+          "caption": "5.2.1.  Reinsert the Float Chamber Gasket.",
           "text": "/img/figures/FloatGasket_Replace.png",
-          "type": "image"
+          "type": "image_and_text"
         }, {
-          "text": "5.2.2.  Align the marking on the Float Chamber flange with the marking on the Carburetor assembly."
-        }, {
+          "caption": "5.2.2.  Align the marking on the Float Chamber flange with the marking on the Carburetor assembly.",
           "text": "/img/figures/FloatChamber_Align.png",
-          "type": "image"
+          "type": "image_and_text"
         }, {
           "text": "5.2.3.  Secure the Float Chamber to the Carburetor assembly using the 10mm Bolt and Washer.",
           "subtasks": [{
@@ -330,39 +313,34 @@ var proc = {
         "text": "/img/figures/Carb_Replace.png",
         "type": "image_and_text",
         "subtasks": [{
-          "text": "6.1.1.  Slide the Carburetor onto the bolts attached to the Generator."
-        }, {
+          "caption": "6.1.1.  Slide the Carburetor onto the bolts attached to the Generator.",
           "text": "/img/figures/Carb_Replace.png",
-          "type": "image"
+          "type": "image_and_text"
         }, {
-          "text": "6.1.2.  Insert the connection point of the Vent Tubes into the Generator housing through the right hand hole on the bottom of the casing."
-        }, {
+          "caption": "6.1.2.  Insert the connection point of the Vent Tubes into the Generator housing through the right hand hole on the bottom of the casing.",
           "text": "/img/figures/VentTubes_Replace.png",
-          "type": "image"
+          "type": "image_and_text"
         }, {
-          "text": "6.1.3.  Put the Vent Tubes back into position corresponding to the following figure."
-        }, {
+          "caption": "6.1.3.  Put the Vent Tubes back into position corresponding to the following figure.",
           "text": "/img/figures/VentTubes_Labeled2.png",
-          "type": "image"
+          "type": "image_and_text"
         }, {
           "caption": "6.1.4.  Reattach the Right Hand Vent Tube to the Carburetor.",
           "text": "/img/figures/VentRight_Detached.png",
-          "type": "image",
+          "type": "image_and_text",
           "subtasks": [{
-            "text": "6.1.4.1.  Push the Right Hand Vent Tube upwards and into its connection tab."
-          }, {
+            "caption": "6.1.4.1.  Push the Right Hand Vent Tube upwards and into its connection tab.",
             "text": "/img/figures/VentRight_Attached.png",
-            "type": "image"
+            "type": "image_and_text"
           }]
         }, {
           "caption": "6.1.5.  Reattach the Left Hand Vent Tube to the Carburetor.",
           "text": "/img/figures/VentLeft_Detached.png",
-          "type": "image",
+          "type": "image_and_text",
           "subtasks": [{
-            "text": "6.1.5.1.  Push the Left Hand Vent Tube onto the fitting on the Carburetor."
-          }, {
+            "caption": "6.1.5.1.  Push the Left Hand Vent Tube onto the fitting on the Carburetor.",
             "text": "/img/figures/VentLeft_Attached.png",
-            "type": "image"
+            "type": "image_and_text"
           }]
         }]
       }, {
@@ -376,7 +354,8 @@ var proc = {
           "subtasks": [{
             "text": "6.2.2.1.  Loosen the tension clamp by pushing both of the tabs on the clamp toward one another using Pliers. Hold the tabs with the Pliers while sliding the clamp onto the fitting."
           }, {
-            "text": "VIDEO OF HOSE REATTACHMENT PROCESS"
+            "text": "/vid/TensionClamp_Reattach.mp4",
+            "type": "video"
           }]
         }, {
           "text": "6.2.3.  Remove the Hose Pinching Pliers from the Carburetor Fuel Tube."
@@ -384,20 +363,17 @@ var proc = {
       }, {
         "text": "6.3.    Replace the Carburetor Drain Tube",
         "subtasks": [{
-          "text": "6.3.1.  Insert the unnotched end of the Carburetor Drain Tube into the Generator housing through the left hand hole on the bottom of the casing."
-        }, {
+          "caption": "6.3.1.  Insert the unnotched end of the Carburetor Drain Tube into the Generator housing through the left hand hole on the bottom of the casing.",
           "text": "/img/figures/DrainTube_Replace1.png",
-          "type": "image"
+          "type": "image_and_text"
         }, {
-          "text": "6.3.2.  Reattach the Carburetor Drain Tube to the fitting on the Carburetor."
-        }, {
+          "caption": "6.3.2.  Reattach the Carburetor Drain Tube to the fitting on the Carburetor.",
           "text": "/img/figures/DrainTube_Replace2.png",
-          "type": "image"
+          "type": "image_and_text"
         }, {
-          "text": "6.3.3.  Check that the configuration of the Carburetor Drain Tube as well as the Right and Left Hand Vent Tubes are in the proper configuration."
-        }, {
+          "caption": "6.3.3.  Check that the configuration of the Carburetor Drain Tube as well as the Right and Left Hand Vent Tubes are in the proper configuration.",
           "text": "/img/figures/TubeConfig.png",
-          "type": "image"
+          "type": "image_and_text"
         }]
       }, {
         "text": "6.4.    Inspect the bottom of the Generator casing for gasoline or tools; clean if necessary."
@@ -411,15 +387,13 @@ var proc = {
         "text": "/img/figures/CaseGasket_Labeled.png",
         "type": "image_and_text", 
         "subtasks": [{
-          "text": "7.1.1.  Slide the Air Intake Joint Gasket onto the bolts attached to the Generator."
-        }, {
+          "caption": "7.1.1.  Slide the Air Intake Joint Gasket onto the bolts attached to the Generator.",
           "text": "/img/figures/AirGasket_Replace.png",
-          "type": "image"
+          "type": "image_and_text"
         }, {
-          "text": "7.1.2.  Slide the Air Cleaner Case onto the bolts attached to the Generator."
-        }, {
+          "caption": "7.1.2.  Slide the Air Cleaner Case onto the bolts attached to the Generator.",
           "text": "/img/figures/AirCase_Replace.png",
-          "type": "image"
+          "type": "image_and_text"
         }, {
           "caption": "7.1.3.  Replace the 8mm Center Bolt and Flange Nuts securing the Air Cleaner Case to the Generator.",
           "text": "/img/figures/AirCaseNutsBolts_Replace.png",
@@ -433,23 +407,20 @@ var proc = {
         "text": "/img/figures/AirFiltersCover_Labeled.png",
         "type": "image_and_text",
         "subtasks": [{
-          "text": "7.2.1.  Reattach the Breather Tube to the Air Cleaner Case."
-        }, {
+          "caption": "7.2.1.  Reattach the Breather Tube to the Air Cleaner Case.",
           "text": "/img/figures/BreatherTube_Replace.png",
-          "type": "image"
+          "type": "image_and_text"
         }, {
           "text": "7.2.2.  Replace the Air Filters.",
           "subtasks": [{
-            "text": "7.2.2.1.  Insert both of the Air Filters by hand: the Main Filter (larger, upper filter) and the Outer Filter (small, lower filter)."
-          }, {
+            "caption": "7.2.2.1.  Insert both of the Air Filters by hand: the Main Filter (larger, upper filter) and the Outer Filter (small, lower filter).",
             "text": "/img/figures/AirFilters_Labeled.png",
-            "type": "image"
+            "type": "image_and_text"
           }]
         }, {
-          "text": "7.2.3.  Replace the Air Cleaner Cover."
-        }, {
+          "caption": "7.2.3.  Replace the Air Cleaner Cover.",
           "text": "/img/figures/AirCover_Replace.png",
-          "type": "image"
+          "type": "image_and_text"
         }, {
           "caption": "7.2.4.  Tighten the Air Cleaner Cover Screw.",
           "text": "/img/figures/AirScrew_Location.png",
@@ -475,15 +446,13 @@ var proc = {
         "text": "/img/figures/SparkCoverCap_Labeled.png",
         "type": "image_and_text",
         "subtasks": [{
-          "text": "7.4.1.  Replace the Spark Plug Cap."
-        }, {
+          "caption": "7.4.1.  Replace the Spark Plug Cap.",
           "text": "/img/figures/SparkCap_Replace.png",
-          "type": "image"
+          "type": "image_and_text"
         }, {
-          "text": "7.4.2.  Replace the Spark Plug Cover."
-        }, {
+          "caption": "7.4.2.  Replace the Spark Plug Cover.",
           "text": "/img/figures/SparkCover_Replace.png",
-          "type": "image"
+          "type": "image_and_text"
         }]
       }]
     }
@@ -499,7 +468,7 @@ function buildProcedure(steps, parent, depth) {
     } else if (step.type == 'image_and_text') {
       $('<li id="' + procID + '"><div class="info">' + step.caption + '</div><img class="proc_image info" src="' + step.text.substr(1) + '"></li>' + '</li>').appendTo('ul#' + parent)
     }else if (step.type == 'video') {
-      $('<li id="' + procID + '"><div class="info">' + step.text + '</div></li>' + '</li>').appendTo('ul#' + parent)
+      $('<li id="' + procID + '"><video class="info" src="' + step.text + '"controls autoplay loop></video></li>' + '</li>').appendTo('ul#' + parent)
     } else if (step.type == 'caution') {
       $('<li id="' + procID + '" class="caution"><div class="info">' + step.text + '</div></li>').appendTo('ul#' + parent)
     } else {
