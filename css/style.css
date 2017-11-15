@@ -38,7 +38,7 @@ body {
     margin: 0;
     padding: 0;
     cursor: pointer;
-    padding-left: 20px;
+    padding-left: 80px;
 }
 
 #expList p {
@@ -64,6 +64,7 @@ body {
     background-position: 1px 8px;
     padding-left: 20px;
     background-repeat: no-repeat;
+    margin-top: 20px;
 }
 
 /* Collapsed state for list element */
