@@ -4,6 +4,13 @@
 function prepareList() {
   experimentStarted = false;
 
+  const UPKEY = 'w';
+  const DOWNKEY = 's';
+  const BEGINEXPERIMENTKEY = 'p';
+  const ENDEXPERIMENTKEY = 'q';
+  const EXPANDKEY = 'a';
+  const COLLAPSEKEY = 'd';
+
   function data_log() {
     if (experimentStarted) {
       args = Array.prototype.slice.call(arguments);
@@ -17,23 +24,7 @@ function prepareList() {
   $('#expList')
     .find('li:has(ul)')
     .click(function(event) {
-      if (this == event.target) {
-        if (experimentStarted && $(this).hasClass('expanded')) {
-          // you shouldn't be able to collapse during the experiment
-        } else {
-          $(this).toggleClass('expanded');
-          $(this)
-            .children('ul')
-            .toggle('fast');
-
-          if ($(this).hasClass('expanded')) {
-            data_log(new Date().getTime(), this.id, 'expanded');
-          } else {
-            data_log(new Date().getTime(), this.id, 'collapsed');
-          }
-        }
-      }
-      return false;
+      toggle(this);
     })
     .addClass('collapsed')
     .children('ul')
@@ -119,6 +110,32 @@ function prepareList() {
     );
   };
 
+  var toggle = function(that) {
+    if (that == event.target || event.key == EXPANDKEY || event.key == COLLAPSEKEY) {
+      if (experimentStarted && $(that).hasClass('expanded')) {
+        // you shouldn't be able to collapse during the experiment
+      } else {
+        $(that).toggleClass('expanded');
+        $(that)
+          .children('ul')
+          .toggle('fast');
+
+        if ($(that).hasClass('expanded')) {
+          data_log(new Date().getTime(), that.id, 'expanded');
+        } else {
+          data_log(new Date().getTime(), that.id, 'collapsed');
+        }
+      }
+    }
+    return false;
+  };
+
+  var toggleThat = function() {
+    if ($currentElement.children('ul').length) {
+      toggle($currentElement[0]);
+    }
+  };
+
   var beginExperiment = function() {
     filename = 'subject_' + $('#subjectid').val() + '.txt';
     fileStream = streamSaver.createWriteStream(filename);
@@ -136,10 +153,12 @@ function prepareList() {
   };
 
   $(window).keyup(function(e) {
-    if (event.key == 's') down();
-    if (event.key == 'w') up();
-    if (event.key == 'p') beginExperiment();
-    if (event.key == 'q') endExperiment();
+    if (event.key == DOWNKEY) down();
+    if (event.key == UPKEY) up();
+    if (event.key == BEGINEXPERIMENTKEY) beginExperiment();
+    if (event.key == ENDEXPERIMENTKEY) endExperiment();
+    if (event.key == EXPANDKEY) toggleThat();
+    if (event.key == COLLAPSEKEY) toggleThat();
     e.preventDefault();
   });
   $('#down')
