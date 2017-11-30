@@ -468,7 +468,7 @@ function buildProcedure(steps, parent, depth) {
     } else if (step.type == 'image_and_text') {
       $('<li id="' + procID + '"><div class="info">' + step.caption + '</div><img class="proc_image info" src="' + step.text.substr(1) + '"></li>' + '</li>').appendTo('ul#' + parent)
     }else if (step.type == 'video') {
-      $('<li id="' + procID + '"><video class="info" src="' + step.text.text.substr(1) + '"controls autoplay loop></video></li>' + '</li>').appendTo('ul#' + parent)
+      $('<li id="' + procID + '"><video class="info" src="' + step.text.substr(1) + '"controls autoplay loop></video></li>' + '</li>').appendTo('ul#' + parent)
     } else if (step.type == 'caution') {
       $('<li id="' + procID + '" class="caution"><div class="info">' + step.text + '</div></li>').appendTo('ul#' + parent)
     } else {
