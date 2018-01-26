@@ -52,7 +52,7 @@ function prepareList() {
 
   // Set up this marker moving technology
   $currentElement = $('li:visible').first();
-  $currentElement.find('> .info').css('border', '2px solid red');
+  $currentElement.find('> .info').css('border', '2px solid limegreen');
 
   var down = function() {
     $('.info').css('border', '');
@@ -72,7 +72,7 @@ function prepareList() {
       $nextElement.attr('id')
     );
     $currentElement = $nextElement;
-    $currentElement.find('> .info').css('border', '2px solid red');
+    $currentElement.find('> .info').css('border', '2px solid limegreen');
 
     $('body, html').animate(
       {
@@ -100,7 +100,7 @@ function prepareList() {
       $nextElement.attr('id')
     );
     $currentElement = $nextElement;
-    $currentElement.find('> .info').css('border', '2px solid red');
+    $currentElement.find('> .info').css('border', '2px solid limegreen');
 
     $('body, html').animate(
       {

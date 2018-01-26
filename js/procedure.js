@@ -268,9 +268,7 @@ var proc = {
           "subtasks": [{
             "text": "4.4.3.1.  Test spring operation by pushing down on the Float Valve Tip."
           }]
-        }, {
-          "text": "4.4.4.  Inspect the Float Valve Seat for wear."
-        }]
+	}]
       }]
     },
 
