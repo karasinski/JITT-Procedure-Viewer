@@ -10,6 +10,7 @@ function prepareList() {
   const ENDEXPERIMENTKEY = 'q';
   const EXPANDKEY = 'a';
   const COLLAPSEKEY = 'd';
+  const PLAYKEY = 't';
 
   function data_log() {
     if (experimentStarted) {
@@ -134,7 +135,20 @@ function prepareList() {
     if ($currentElement.children('ul').length) {
       toggle($currentElement[0]);
     }
+    play();
   };
+
+  var play = function() {
+    if ($currentElement.children('video').length) {
+      video = $currentElement.children('video')[0]
+      if (video.paused) {
+        video.play();
+      } else {
+        video.currentTime = 0;
+        video.play();
+      }
+    }
+  }
 
   var beginExperiment = function() {
     filename = 'subject_' + $('#subjectid').val() + '.txt';
@@ -159,8 +173,10 @@ function prepareList() {
     if (event.key == ENDEXPERIMENTKEY) endExperiment();
     if (event.key == EXPANDKEY) toggleThat();
     if (event.key == COLLAPSEKEY) toggleThat();
+    if (event.key == PLAYKEY) play();
     e.preventDefault();
   });
+
   $('#down')
     .unbind('click')
     .click(down);

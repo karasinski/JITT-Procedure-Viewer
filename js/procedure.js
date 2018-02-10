@@ -39,20 +39,28 @@ var proc = {
           "text": "2.2.4.  Disconnect Black/White Wire, D → 1."
         }]
       }, {
+        "text": "2.3.    Clamp the Fuel Tube in the middle of the tube uing the Hose Pinching Pliers."
+      }, {
         "text": "CAUTION: Pry the Fuel Tube off gently to avoid damaging it.",
         "type": "caution"
       }, {
-        "text": "2.3.    Clamp the Fuel Tube in the middle of the tube uing the Hose Pinching Pliers."
+        "text": "2.4.    Detach the Fuel Tube from the left side and place open end into the Gasoline Container.",
+        "subtasks": [{
+          "text": "2.4.1.  The left side of the Fuel Tube is indicated by the red spacer. Disengage the tension clamp and remove the Fuel Tube from the fitting.",
+          "subtasks": [{
+            "text": "2.4.1.1.  Remove the tension clamp by pushing both of the tabs on the clamp toward one another using Pliers. Hold the tabs with the Pliers while pulling the clamp off of the fitting and up the tube."
+          }, {
+            "text": "2.4.1.2.  Once the tension clamp is disengaged, pry the Fuel Tube from the fitting using a Flat Head Screwdriver."
+          }]
+        }, {
+          "text": "2.4.2.  Let the removed end of the Fuel Tube rest in the Gasoline Container."
+        }]
       }, {
-        "text": "2.4.    Remove the Fuel Tube tension clamps using Pliers from the left side of the Fuel Tube indicated by the red spacer."
+        "text": "2.5.    Remove the Brass Flat Head Screws using a Flat Head Scredriver."
       }, {
-        "text": "2.5.    Detach the left side of the Fuel Tube using a Flat Head scredriver and place open end into the Gasoline Container."
+        "text": "2.6.    Remove the Cover Hatch and set aside."
       }, {
-        "text": "2.6.    Remove the Brass Flat Head Screws using a Flat Head Scredriver."
-      }, {
-        "text": "2.7.    Remove the Cover Hatch and set aside."
-      }, {
-        "text": "2.8.    Remove the O-ring Seals from under the Cover Hatch."
+        "text": "2.7.    Remove the O-ring Seals from under the Cover Hatch."
       }]
     },
 
@@ -129,8 +137,10 @@ function buildProcedure(steps, parent, depth) {
       $('<li id="' + procID + '">' + '<img class="proc_image info" src="' + step.text.substr(1) + '"></li>' + '</li>').appendTo('ul#' + parent)
     } else if (step.type == 'image_and_text') {
       $('<li id="' + procID + '"><div class="info">' + step.caption + '</div><img class="proc_image info" src="' + step.text.substr(1) + '"></li>' + '</li>').appendTo('ul#' + parent)
+    } else if (step.type == 'image_and_text_and_caution') {
+      $('<li id="' + procID + '"><div class="info">' + step.caption + '</div><div class="caution"><div class="info">' + step.caution + '</div></div><img class="proc_image info" src="' + step.text.substr(1) + '"></li>' + '</li>').appendTo('ul#' + parent)
     } else if (step.type == 'video') {
-      $('<li id="' + procID + '"><div class="info">' + step.text + '</div></li>' + '</li>').appendTo('ul#' + parent)
+      $('<li id="' + procID + '"><video class="info" src="' + step.text.substr(1) + '"controls></video></li>' + '</li>').appendTo('ul#' + parent)
     } else if (step.type == 'caution') {
       $('<li id="' + procID + '" class="caution"><div class="info">' + step.text + '</div></li>').appendTo('ul#' + parent)
     } else {
