@@ -1,6 +1,5 @@
 var proc = {
-  "PROCEDURE": [
-    {
+  "PROCEDURE": [{
       "text": "1.  ADDRESS GENERATOR SAFETY PRECAUTIONS",
       "subtasks": [{
         "caption": "1.1.    Turn Engine Switch → OFF (Audible Call Out)",
@@ -54,7 +53,7 @@ var proc = {
           "text": "/img/figures/MaintenanceScrew_Location.PNG",
           "type": "image_and_text",
           "subtasks": [{
-            "text": "2.1.1.1.  Use a Flat Head Screwdriver to loosen the Maintenance Cover Screw. The screw is a captive screw and does not fully remove from the cover itself."
+            "text": "2.1.1.1.  Use a Flat Head Screwdriver to loosen the Maintenance Cover Screw."
           }]
         }, {
           "caption": "2.1.2.  Remove the Maintenance Cover.",
@@ -66,7 +65,7 @@ var proc = {
         "text": "/img/figures/AirCover_Location.PNG",
         "type": "image_and_text",
         "subtasks": [{
-          "caption": "2.2.1.  Loosen the Air Cleaner Cover Screw.",
+          "caption": "2.2.1.  Remove the Air Cleaner Cover Screw.",
           "text": "/img/figures/AirScrew_Location.PNG",
           "type": "image_and_text",
           "subtasks": [{
@@ -81,7 +80,7 @@ var proc = {
             "text": "/img/figures/AirFilters_Labeled.PNG",
             "type": "image_and_text"
           }]
-        }]  
+        }]
       }, {
         "text": "CAUTION: Pry the Breather Tube off gently to avoid damaging it.",
         "type": "caution"
@@ -109,7 +108,7 @@ var proc = {
         }, {
           "caption": "2.4.2.  Slide the Air Cleaner Case off of the bolts attached to the Generator.",
           "text": "/img/figures/AirCase_Removal.PNG",
-          "type": "image_and_text" 
+          "type": "image_and_text"
         }, {
           "caption": "2.4.3.  Slide the Air Intake Joint Gasket off of the bolts attached to the Generator.",
           "text": "/img/figures/AirGasket_Removal.PNG",
@@ -130,7 +129,7 @@ var proc = {
           "type": "image_and_text"
         }]
       }, {
-        "caption": "3.2.    Loosen the Carburetor Drain Screw and drain fuel into the Gasoline Container.",
+        "caption": "3.2.    Loosen the Carburetor Drain Screw and drain fuel into the Gasoline Container then tighten the Carburetor Drain Screw.",
         "text": "/img/figures/DrainGas_Labeled.PNG",
         "type": "image_and_text",
         "subtasks": [{
@@ -145,23 +144,23 @@ var proc = {
           "text": "3.2.4.  Remove the Gasoline Container."
         }]
       }, {
+        "text": "CAUTION: Pry the Carburetor Fuel Tube off gently to avoid damaging it.",
+        "type": "caution"
+      }, {
         "caption": "3.3.    Detach the Carburetor Fuel Tube from the Carburetor.",
         "text": "/img/figures/FuelTube_Labeled.PNG",
         "type": "image_and_text",
         "subtasks": [{
-          "text": "CAUTION: Pry the Carburetor Fuel Tube off gently to avoid damaging it.",
-          "type": "caution"
-        }, {
           "caption": "3.3.1.  Disengage the tension clamp and pull the Carburetor Fuel Tube from its fitting on the Carburetor.",
           "text": "/img/figures/TensionClamp_Location.PNG",
           "type": "image_and_text",
           "subtasks": [{
-            "text": "3.3.1.1.  Remove the tension clamp by pushing both of the tabs on the clamp toward one another using Pliers. Hold the tabs with the Pliers while pulling the clamp off of the fitting."
-          }, {
-            "text": "3.3.1.2.  Pry the Carburetor Fuel Tube from the Carburetor fitting using a Flat Head Screwdriver."
-          }, {
             "text": "/vid/TensionClamp_Removal.mp4",
             "type": "video"
+          }, {
+            "text": "3.3.1.1.  Disengage the tension clamp by pushing both of the tabs on the clamp toward one another using Pliers. Hold the tabs with the Pliers while sliding the clamp off of the fitting and up the tube."
+          }, {
+            "text": "3.3.1.2.  Pry the Carburetor Fuel Tube from the Carburetor fitting using a Flat Head Screwdriver."
           }]
         }]
       }, {
@@ -268,7 +267,7 @@ var proc = {
           "subtasks": [{
             "text": "4.4.3.1.  Test spring operation by pushing down on the Float Valve Tip."
           }]
-	}]
+        }]
       }]
     },
 
@@ -308,7 +307,7 @@ var proc = {
       "text": "6.  CARBURETOR REPLACEMENT",
       "subtasks": [{
         "caption": "6.1.    Replace the Carburetor followed by the Right and Left Hand Vent Tubes.",
-        "text": "/img/figures/Carb_Replace.PNG",
+        "text": "/img/figures/CarbVentTubes_Location.PNG",
         "type": "image_and_text",
         "subtasks": [{
           "caption": "6.1.1.  Slide the Carburetor onto the bolts attached to the Generator.",
@@ -321,7 +320,12 @@ var proc = {
         }, {
           "caption": "6.1.3.  Put the Vent Tubes back into position corresponding to the following figure.",
           "text": "/img/figures/VentTubes_Labeled2.PNG",
-          "type": "image_and_text"
+          "type": "image_and_text",
+          "subtasks": [{
+            "caption": "6.1.3.1.  The following figure ehances the layering of the Vent Tubes.",
+            "text": "/img/figures/VentTubesConfig.PNG",
+            "type": "image_and_text"
+          }]
         }, {
           "caption": "6.1.4.  Reattach the Right Hand Vent Tube to the Carburetor.",
           "text": "/img/figures/VentRight_Detached.PNG",
@@ -365,11 +369,11 @@ var proc = {
           "text": "/img/figures/DrainTube_Replace1.PNG",
           "type": "image_and_text"
         }, {
-          "caption": "6.3.2.  Reattach the Carburetor Drain Tube to the fitting on the Carburetor.",
+          "caption": "6.3.2.  Reattach the notched end of the Carburetor Drain Tube to the fitting on the Carburetor behind the Left Hand Vent Tube.",
           "text": "/img/figures/DrainTube_Replace2.PNG",
           "type": "image_and_text"
         }, {
-          "caption": "6.3.3.  Check that the configuration of the Carburetor Drain Tube as well as the Right and Left Hand Vent Tubes are in the proper configuration.",
+          "caption": "6.3.3.  Check that the layering of the Carburetor Drain Tube, the Right Hand Vent Tube, and Left Hand Vent Tube is correct.",
           "text": "/img/figures/TubeConfig.PNG",
           "type": "image_and_text"
         }]
@@ -381,9 +385,9 @@ var proc = {
     {
       "text": "7.  AIR CLEANER ASSEMBLY REPLACEMENT",
       "subtasks": [{
-        "caption": "7.1.    Replace the Air Intake Joint Gasket and Air Cleaner Case.",
+        "caption": "7.1.    Replace the Air Intake Joint Gasket and reattach Air Cleaner Case.",
         "text": "/img/figures/CaseGasket_Labeled.PNG",
-        "type": "image_and_text", 
+        "type": "image_and_text",
         "subtasks": [{
           "caption": "7.1.1.  Slide the Air Intake Joint Gasket onto the bolts attached to the Generator.",
           "text": "/img/figures/AirGasket_Replace.PNG",
@@ -465,8 +469,10 @@ function buildProcedure(steps, parent, depth) {
       $('<li id="' + procID + '">' + '<img class="proc_image info" src="' + step.text.substr(1) + '"></li>' + '</li>').appendTo('ul#' + parent)
     } else if (step.type == 'image_and_text') {
       $('<li id="' + procID + '"><div class="info">' + step.caption + '</div><img class="proc_image info" src="' + step.text.substr(1) + '"></li>' + '</li>').appendTo('ul#' + parent)
-    }else if (step.type == 'video') {
-      $('<li id="' + procID + '"><video class="info" src="' + step.text.substr(1) + '"controls loop></video></li>' + '</li>').appendTo('ul#' + parent)
+    } else if (step.type == 'image_and_text_and_caution') {
+      $('<li id="' + procID + '"><div class="info">' + step.caption + '</div><div class="caution"><div class="info">' + step.caution + '</div></div><img class="proc_image info" src="' + step.text.substr(1) + '"></li>' + '</li>').appendTo('ul#' + parent)
+    } else if (step.type == 'video') {
+      $('<li id="' + procID + '"><video class="info" src="' + step.text.substr(1) + '"controls></video></li>' + '</li>').appendTo('ul#' + parent)
     } else if (step.type == 'caution') {
       $('<li id="' + procID + '" class="caution"><div class="info">' + step.text + '</div></li>').appendTo('ul#' + parent)
     } else {
