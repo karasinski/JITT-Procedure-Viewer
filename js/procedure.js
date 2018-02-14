@@ -82,12 +82,10 @@ var proc = {
           }]
         }]
       }, {
-        "text": "CAUTION: Pry the Breather Tube off gently to avoid damaging it.",
-        "type": "caution"
-      }, {
         "caption": "2.3.    Remove the Breather Tube from the Air Cleaner Case.",
+        "caution": "CAUTION: Pry the Breather Tube off gently to avoid damaging it.",
         "text": "/img/figures/BreatherTube_Location.PNG",
-        "type": "image_and_text",
+        "type": "image_and_text_and_caution",
         "subtasks": [{
           "text": "2.3.1.  Wrap the Breather Tube in the Rag and grip the Rag and Breather Tube with the Pliers. Gently tug down and away from the Air Cleaner Case with the Pliers while prying the end of the Breather Tube away from the Air Cleaner Case with the Flat Head Screwdriver."
         }, {
@@ -144,12 +142,10 @@ var proc = {
           "text": "3.2.4.  Remove the Gasoline Container."
         }]
       }, {
-        "text": "CAUTION: Pry the Carburetor Fuel Tube off gently to avoid damaging it.",
-        "type": "caution"
-      }, {
         "caption": "3.3.    Detach the Carburetor Fuel Tube from the Carburetor.",
+        "caution": "CAUTION: Pry the Carburetor Fuel Tube off gently to avoid damaging it.",
         "text": "/img/figures/FuelTube_Labeled.PNG",
-        "type": "image_and_text",
+        "type": "image_and_text_and_caution",
         "subtasks": [{
           "caption": "3.3.1.  Disengage the tension clamp and pull the Carburetor Fuel Tube from its fitting on the Carburetor.",
           "text": "/img/figures/TensionClamp_Location.PNG",
@@ -211,7 +207,13 @@ var proc = {
         "text": "/img/figures/Carb_Location.PNG",
         "type": "image_and_text",
         "subtasks": [{
-          "text": "3.6.1.  Slide the Carburetor off of the bolts attached to the Generator."
+          "caption": "3.6.1.  Slide the Carburetor off of the bolts attached to the Generator.",
+          "text": "/img/figures/Carb_Removal.PNG",
+          "type": "image_and_text"
+        }, {
+          "caption": "3.6.2.  The Carburetor is attached to the Generator through a wire and should be rested next to the Generator as shown in the figure below.",
+          "text": "/img/figures/Carb_Placement.PNG",
+          "type": "image_and_text"
         }]
       }]
     },
@@ -255,7 +257,9 @@ var proc = {
         "text": "/img/figures/Float_Location.PNG",
         "type": "image_and_text",
         "subtasks": [{
-          "text": "4.4.1.  Lift the Float up and off of the Carburetor assembly."
+          "caption": "4.4.1.  Lift the Float up and off of the Carburetor assembly.",
+          "text": "/img/figures/Float_Removal.PNG",
+          "type": "image_and_text"
         }, {
           "caption": "4.4.2.  Inspect the Float Valve Tip for wear.",
           "text": "/img/figures/FloatValve_Inspect.PNG",
