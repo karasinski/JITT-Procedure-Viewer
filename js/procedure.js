@@ -39,7 +39,7 @@ var proc = {
       }, {
         "text": "2.3.    Clamp the Fuel Tube in the middle of the tube uing the Hose Pinching Pliers."
       }, {
-      	"text": "CAUTION: Pry the Fuel Tube off gently to avoid damaging it.",
+        "text": "CAUTION: Pry the Fuel Tube off gently to avoid damaging it.",
         "type": "caution"
       }, {
         "text": "2.4.    Detach the Fuel Tube from the left side and place open end into the Gasoline Container.",
