@@ -30,13 +30,11 @@ var proc = {
       }, {
         "text": "2.2.    Disconnect each wire one at a time starting from the letter side in alphabetical order using Needle Nose Pliers.",
         "subtasks": [{
-          "text": "2.2.1.  Disconnect Orange Wire, A → 2."
-        }, {
-          "text": "2.2.2.  Disconnect Blue Wire, B → 4."
-        }, {
-          "text": "2.2.3.  Disconnect White/Blue Wire, C → 3."
-        }, {
-          "text": "2.2.4.  Disconnect Black/White Wire, D → 1."
+          "text": "2.2.1.  Disconnect Orange Wire, A → 2.\n           Disconnect Blue Wire, B → 4.\n           Disconnect White/Blue Wire, C → 3.\n           Disconnect Black/White Wire, D → 1.",
+          "subtasks": [{
+            "text": "/vid/Wire_Removal.mp4",
+            "type": "video"
+          }]
         }]
       }, {
         "text": "2.3.    Clamp the Fuel Tube in the middle of the tube uing the Hose Pinching Pliers."
