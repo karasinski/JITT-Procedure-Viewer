@@ -6,13 +6,15 @@ var proc = {
         "text": "/img/figures/Orientation.png",
         "type": "image_and_text"
       }, {
-        "text": "1.2.    Remove the four 10mm Flange Nuts fastening the Top Cover to the Base Plate using the Ratcheting Socket Wrench and Socket Set. The 10mm Hex Socket attaches directly to the Ratchet."
+      	"text": "1.2.    Loosen the 8mm Flange Nut near the orientation marker on the Base Plate and remove the Spade Terminal from the Bolt."
       }, {
-        "caption": "1.3.    Remove the Top Cover and set aside",
+        "text": "1.3.    Remove the four 10mm Flange Nuts fastening the Top Cover to the Base Plate using the Ratcheting Socket Wrench and Socket Set. The 10mm Hex Socket attaches directly to the Ratchet."
+      }, {
+        "caption": "1.4.    Remove the Top Cover and set aside",
         "text": "/img/figures/TopCover.png",
         "type": "image_and_text"
       }, {
-        "caption": "1.4.    Remove the Rubber Gasket and set aside.",
+        "caption": "1.5.    Remove the Rubber Gasket and set aside.",
         "text": "/img/figures/Gasket.png",
         "type": "image_and_text"
       }]
@@ -96,13 +98,7 @@ var proc = {
       }, {
         "text": "4.7.    Reconnect each wire one at a time starting from the number side in numerical order.",
         "subtasks": [{
-          "text": "4.7.1.  Connect Black/White Wire, 1 → D."
-        }, {
-          "text": "4.7.2.  Connect Orange Wire, 2 → A."
-        }, {
-          "text": "4.7.3.  Connect White/Blue Wire, 3 → C."
-        }, {
-          "text": "4.7.4.  Connect Blue Wire, 4 → B."
+          "text": "4.7.1.  Connect Black/White Wire, 1 → D.\n           Connect Orange Wire, 2 → A.\n           Connect White/Blue Wire, 3 → C.\n           Connect Blue Wire, 4 → B."
         }]
       }, {
         "caption": "4.8.    Confirm that the configuration of the wires is correct (Audible Call Out).",
@@ -122,6 +118,8 @@ var proc = {
         "text": "5.2.    Replace the Outer Cover."
       }, {
         "text": "5.3.    Fasten the Outer Cover to the Base Plate with the 10mm Flange Nuts using the Ratcheting Socket Wrench and Socket Set. The 10mm Hex Socket attaches directly to the Ratchet."
+      }, {
+      	"text": "5.4.    Replace the Spade Terminal under the 8mm nut near the orientation marker on the Base Plate and tighten the 8mm nut."
       }]
     }
   ]
