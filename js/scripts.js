@@ -7,7 +7,7 @@ function prepareList() {
   const UPKEY = 'w';
   const DOWNKEY = 's';
   const BEGINEXPERIMENTKEY = 'p';
-  const ENDEXPERIMENTKEY = 'q';
+  const ENDEXPERIMENTKEY = 'o';
   const EXPANDKEY = 'a';
   const COLLAPSEKEY = 'd';
   const PLAYKEY = 't';
@@ -123,6 +123,7 @@ function prepareList() {
 
         if ($(that).hasClass('expanded')) {
           data_log(new Date().getTime(), that.id, 'expanded');
+          down();
         } else {
           data_log(new Date().getTime(), that.id, 'collapsed');
         }
