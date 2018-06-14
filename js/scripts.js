@@ -7,7 +7,7 @@ function prepareList() {
   const UPKEY = 'w';
   const DOWNKEY = 's';
   const BEGINEXPERIMENTKEY = 'p';
-  const ENDEXPERIMENTKEY = 'q';
+  const ENDEXPERIMENTKEY = 'o';
   const EXPANDKEY = 'a';
   const COLLAPSEKEY = 'd';
   const PLAYKEY = 't';
@@ -113,19 +113,16 @@ function prepareList() {
 
   var toggle = function(that) {
     if (that == event.target || event.key == EXPANDKEY || event.key == COLLAPSEKEY) {
-      if (experimentStarted && $(that).hasClass('expanded')) {
-        // you shouldn't be able to collapse during the experiment
-      } else {
-        $(that).toggleClass('expanded');
-        $(that)
-          .children('ul')
-          .toggle('fast');
+      $(that).toggleClass('expanded');
+      $(that)
+        .children('ul')
+        .toggle('fast');
 
-        if ($(that).hasClass('expanded')) {
-          data_log(new Date().getTime(), that.id, 'expanded');
-        } else {
-          data_log(new Date().getTime(), that.id, 'collapsed');
-        }
+      if ($(that).hasClass('expanded')) {
+        data_log(new Date().getTime(), that.id, 'expanded');
+        down();
+      } else {
+        data_log(new Date().getTime(), that.id, 'collapsed');
       }
     }
     return false;
