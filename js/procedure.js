@@ -27,10 +27,9 @@ var proc = {
         "text": "/img/figures/WireOrientation.png",
         "type": "image_and_text"
       }, {
+        "caption": "2.2.    Disconnect and remove each wire one at a time starting from the letter side in alphabetical order using Needle Nose Pliers.",
         "text": "CAUTION: Pull on the bullet connectors. Do not pull by the wire.",
-        "type": "caution"
-      }, {
-        "text": "2.2.    Disconnec and remove each wire one at a time starting from the letter side in alphabetical order using Needle Nose Pliers.",
+        "type": "image_and_text_and_caution",
         "subtasks": [{
           "text": "2.2.1.  Disconnect Orange Wire, A → 2.\n           Disconnect Blue Wire, B → 4.\n           Disconnect White/Blue Wire, C → 3.\n           Disconnect Black/White Wire, D → 1.",
           "subtasks": [{
@@ -39,10 +38,9 @@ var proc = {
           }]
         }]
       }, {
-        "text": "2.3.    Clamp the Fuel Tube in the middle of the tube uing the Clamp."
-      }, {
+        "caption": "2.3.    Clamp the Fuel Tube in the middle of the tube uing the Clamp.",
         "text": "CAUTION: Pry the Fuel Tube off gently to avoid damaging it.",
-        "type": "caution"
+        "type": "image_and_text_and_caution"
       }, {
         "text": "2.4.    Detach the Fuel Tube from the left side and place open end into the Gasoline Container.",
         "subtasks": [{
@@ -110,10 +108,9 @@ var proc = {
     {
       "text": "5.  OUTER COVER INSTALLATION",
       "subtasks": [{
+        "caption": "5.1.    Replace the rubber gasket and confirm alignment (Audible Call Out).",
         "text": "CAUTION: Handle the Gasket gently. Do not attempt to force it.",
-        "type": "caution"
-      }, {
-        "text": "5.1.    Replace the rubber gasket and confirm alignment (Audible Call Out)."
+        "type": "image_and_text_and_caution"
       }, {
         "text": "5.2.    Replace the Outer Cover."
       }, {
