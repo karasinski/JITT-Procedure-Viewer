@@ -13,3 +13,5 @@ Thumbs.db
 # SublimeText
 *.sublime-project
 *.sublime-workspace
+
+node_modules/*

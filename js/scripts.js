@@ -6,10 +6,10 @@ function prepareList() {
 
   const UPKEY = 'w';
   const DOWNKEY = 's';
-  const BEGINEXPERIMENTKEY = 'p';
-  const ENDEXPERIMENTKEY = 'o';
-  const EXPANDKEY = 'a';
-  const COLLAPSEKEY = 'd';
+  // const BEGINEXPERIMENTKEY = 'o';
+  const ENDEXPERIMENTKEY = 'p';
+  const EXPANDKEY = 'd';
+  const COLLAPSEKEY = 'a';
   const PLAYKEY = 't';
 
   function data_log() {
@@ -17,8 +17,7 @@ function prepareList() {
       args = Array.prototype.slice.call(arguments);
       data = args.join();
       console.log(data);
-      uint8array = encoder.encode(data + '\n');
-      writer.write(uint8array);
+      client.publish('action', data + '\n');
     }
   }
 
@@ -49,6 +48,11 @@ function prepareList() {
       $('.collapsed')
         .children('ul')
         .hide('fast');
+    });
+  $('#start')
+    .unbind('click')
+    .click(function() {
+      beginExperiment();
     });
 
   // Set up this marker moving technology
@@ -148,10 +152,8 @@ function prepareList() {
   }
 
   var beginExperiment = function() {
-    filename = 'subject_' + $('#subjectid').val() + '.txt';
-    fileStream = streamSaver.createWriteStream(filename);
-    writer = fileStream.getWriter();
-    encoder = new TextEncoder();
+    filename = 'subject_' + $('#subjectid').val();
+    client.publish('filename', filename);
 
     $('.listControl').hide();
     experimentStarted = true;
@@ -160,17 +162,38 @@ function prepareList() {
 
   var endExperiment = function() {
     data_log(new Date().getTime(), 'experiment ended');
-    writer.close();
+    $('*').hide();
   };
 
   $(window).keyup(function(e) {
-    if (event.key == DOWNKEY) down();
-    if (event.key == UPKEY) up();
-    if (event.key == BEGINEXPERIMENTKEY) beginExperiment();
-    if (event.key == ENDEXPERIMENTKEY) endExperiment();
-    if (event.key == EXPANDKEY) toggleThat();
-    if (event.key == COLLAPSEKEY) toggleThat();
-    if (event.key == PLAYKEY) play();
+    if (event.key == DOWNKEY) {
+      data_log(new Date().getTime(), 'pressed DOWNKEY')
+      down();
+    }
+    if (event.key == UPKEY) {
+      data_log(new Date().getTime(), 'pressed UPKEY')
+      up();
+    }
+    // if (event.key == BEGINEXPERIMENTKEY) {
+    //   data_log(new Date().getTime(), 'pressed BEGINEXPERIMENTKEY')
+    //   beginExperiment();
+    // }
+    if (event.key == ENDEXPERIMENTKEY) {
+      data_log(new Date().getTime(), 'pressed ENDEXPERIMENTKEY')
+      endExperiment();
+    }
+    if (event.key == EXPANDKEY) {
+      data_log(new Date().getTime(), 'pressed EXPANDKEY')
+      toggleThat();
+    }
+    if (event.key == COLLAPSEKEY) {
+      data_log(new Date().getTime(), 'pressed COLLAPSEKEY')
+      toggleThat();
+    }
+    if (event.key == PLAYKEY) {
+      data_log(new Date().getTime(), 'pressed PLAYKEY')
+      play();
+    }
     e.preventDefault();
   });
 
