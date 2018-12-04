@@ -350,7 +350,7 @@ var proc = {
           }]
         }]
       }, {
-        "caption": "6.2.    Reattach the Carburetor Fuel Tube.",
+        "caption": "6.2.    Reattach the Carburetor Fuel Tube and remove the Hose Pinching Pliers.",
         "text": "/img/figures/FuelTube_Detached.PNG",
         "type": "image_and_text",
         "subtasks": [{
