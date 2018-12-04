@@ -6,7 +6,7 @@ var proc = {
         "text": "/img/figures/Orientation.png",
         "type": "image_and_text"
       }, {
-      	"text": "1.2.    Loosen the 8mm Nuts near the orientation marker on the Base Plate and remove the Spade Terminal from the Bolt."
+      	"text": "1.2.    Loosen the 8mm Nut near the orientation marker on the Base Plate and remove the Spade Terminal from the Bolt."
       }, {
         "text": "1.3.    Remove the four 10mm Nuts fastening the Top Cover to the Base Plate using the Ratcheting Socket Wrench and Socket Set. The 10mm Hex Socket can attach directly to the Ratchet or with the extender."
       }, {
@@ -28,8 +28,8 @@ var proc = {
         "type": "image_and_text"
       }, {
         "caption": "2.2.    Disconnect and remove each wire one at a time starting from the letter side in alphabetical order using Needle Nose Pliers.",
-        "text": "CAUTION: Pull on the bullet connectors. Do not pull by the wire.",
-        "type": "image_and_text_and_caution",
+        "caution": "CAUTION: Pull on the bullet connectors. Do not pull by the wire.",
+        "type": "text_and_caution",
         "subtasks": [{
           "text": "2.2.1.  Disconnect Orange Wire, A → 2.\n           Disconnect Blue Wire, B → 4.\n           Disconnect White/Blue Wire, C → 3.\n           Disconnect Black/White Wire, D → 1.",
           "subtasks": [{
@@ -39,8 +39,8 @@ var proc = {
         }]
       }, {
         "caption": "2.3.    Clamp the Fuel Tube in the middle of the tube uing the Clamp.",
-        "text": "CAUTION: Pry the Fuel Tube off gently to avoid damaging it.",
-        "type": "image_and_text_and_caution"
+        "caution": "CAUTION: Pry the Fuel Tube off gently to avoid damaging it.",
+        "type": "text_and_caution"
       }, {
         "text": "2.4.    Detach the Fuel Tube from the left side and place open end into the Gasoline Container.",
         "subtasks": [{
@@ -67,13 +67,13 @@ var proc = {
       "subtasks": [{
         "text": "3.1.    Remove the Wire Boot from the Spark Plug."
       }, {
-        "text": "3.2.    Remove the Spark Plug by hand."
+        "text": "3.2.    Unscrew and remove the Spark Plug by hand."
       }, {
         "caption": "3.3.    Check that the Spark Plug is in good condition (Audible Call Out).",
         "text": "/img/figures/SparkInspect.png",
         "type": "image_and_text"
       }, {
-        "text": "3.4.    Reinstall the Spark Plug."
+        "text": "3.4.    Reinstall the Spark Plug by screwing it in by hand."
       }, {
         "text": "3.5.    Reconnect the Wire Boot to the Spark Plug."
       }]
@@ -109,8 +109,8 @@ var proc = {
       "text": "5.  OUTER COVER INSTALLATION",
       "subtasks": [{
         "caption": "5.1.    Replace the rubber gasket and confirm alignment (Audible Call Out).",
-        "text": "CAUTION: Handle the Gasket gently. Do not attempt to force it.",
-        "type": "image_and_text_and_caution"
+        "caution": "CAUTION: Handle the Gasket gently. Do not attempt to force it.",
+        "type": "text_and_caution"
       }, {
         "text": "5.2.    Replace the Outer Cover."
       }, {
@@ -132,6 +132,8 @@ function buildProcedure(steps, parent, depth) {
       $('<li id="' + procID + '"><div class="info">' + step.caption + '</div><img class="proc_image info" src="' + step.text.substr(1) + '"></li>' + '</li>').appendTo('ul#' + parent)
     } else if (step.type == 'image_and_text_and_caution') {
       $('<li id="' + procID + '"><div class="info">' + step.caption + '</div><div class="caution"><div class="info">' + step.caution + '</div></div><img class="proc_image info" src="' + step.text.substr(1) + '"></li>' + '</li>').appendTo('ul#' + parent)
+    } else if (step.type == 'text_and_caution') {
+      $('<li id="' + procID + '"><div class="info">' + step.caption + '</div><div class="caution"><div class="info">' + step.caution + '</div></div></li>' + '</li>').appendTo('ul#' + parent)
     } else if (step.type == 'video') {
       $('<li id="' + procID + '"><video class="info" src="' + step.text.substr(1) + '"controls></video></li>' + '</li>').appendTo('ul#' + parent)
     } else if (step.type == 'caution') {
