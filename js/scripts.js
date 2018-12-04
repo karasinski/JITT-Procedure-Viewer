@@ -11,13 +11,14 @@ function prepareList() {
   const EXPANDKEY = 'd';
   const COLLAPSEKEY = 'a';
   const PLAYKEY = 't';
+  var canExpand =  true;
 
   function data_log() {
     if (experimentStarted) {
       args = Array.prototype.slice.call(arguments);
       data = args.join();
-      console.log(data);
-      client.publish('action', data + '\n');
+      // console.log(data);
+      client.publish('action', data);
     }
   }
 
@@ -133,10 +134,12 @@ function prepareList() {
   };
 
   var toggleThat = function() {
-    if ($currentElement.children('ul').length) {
-      toggle($currentElement[0]);
+    if (canExpand) {
+      if ($currentElement.children('ul').length) {
+        toggle($currentElement[0]);
+      }
+      play();
     }
-    play();
   };
 
   var play = function() {
@@ -153,6 +156,10 @@ function prepareList() {
 
   var beginExperiment = function() {
     filename = 'subject_' + $('#subjectid').val();
+    // If the subject number begins with the number 2 then they can't expand or collapse
+    if (filename[8] == '2') {
+      canExpand = false;
+    }
     client.publish('filename', filename);
 
     $('.listControl').hide();
@@ -182,6 +189,10 @@ function prepareList() {
       data_log(new Date().getTime(), 'pressed ENDEXPERIMENTKEY')
       endExperiment();
     }
+    if (event.key == PLAYKEY) {
+      data_log(new Date().getTime(), 'pressed PLAYKEY')
+      play();
+    }
     if (event.key == EXPANDKEY) {
       data_log(new Date().getTime(), 'pressed EXPANDKEY')
       toggleThat();
@@ -190,10 +201,7 @@ function prepareList() {
       data_log(new Date().getTime(), 'pressed COLLAPSEKEY')
       toggleThat();
     }
-    if (event.key == PLAYKEY) {
-      data_log(new Date().getTime(), 'pressed PLAYKEY')
-      play();
-    }
+
     e.preventDefault();
   });
 

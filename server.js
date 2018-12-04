@@ -59,7 +59,7 @@ broker.on('published', function(packet, client) {
   }
 
   if (started && topic == 'action') {
-    fs.writeFile('data/' + filename + '.txt', payload, { flag: 'a+' }, (err) => {
+    fs.writeFile('data/' + filename + '.txt', payload + '\n', { flag: 'a+' }, (err) => {
       if (err) {
         console.error(err)
         return

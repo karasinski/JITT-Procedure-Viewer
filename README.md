@@ -9,6 +9,7 @@ A fine, open source, and brittle expandable procedure viewer which only works in
 
 ### Experiment Instructions
 - Once the subject is acquainted with the system, the experimenter should type a subject number into the input box (this subject number may not contain the letters `wspdat`).
+- If the subject is in the control group then their number should start with a 2. This will lock down the expand/collapse capability for the duration of the experiment.
 - The marker should be placed at the first step.
 - The experimenter should press the `Start` button, which will hide the top buttons for the duration of the experiment.
 - The subject should then use the `w` and `s` keys to move up and down through the procedures, which allows the experimenter to track the time at each step.
