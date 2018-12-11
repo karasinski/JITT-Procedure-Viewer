@@ -96,7 +96,7 @@ var proc = {
       }, {
         "text": "4.7.    Reconnect each wire one at a time starting from the number side in numerical order.",
         "subtasks": [{
-          "text": "4.7.1.  Connect the Black/White Wire, 1 → D.\n           Connect the Orange Wire over the Black/White wire, 2 → A.\n           Connect the White/Blue Wire with the left side over the Orange wire and the right side under the Orange wire and over the Black/White wire, 3 → C.\n           Connect the Blue Wire under the Blue/White wire and over the Black/White wire, 4 → B."
+          "text": "4.7.1.  Connect the Black/White Wire, 1 → D.\n           Connect the Orange Wire over the Black/White wire, 2 → A.\n           Connect the right side of the White/Blue Wire under the Orange Wire and over the Black/White Wire. Connect the left side of the White/Blue Wire over the Orange Wire, 3 → C.\n           Connect the Blue Wire under the Blue/White wire and over the Black/White wire, 4 → B."
         }]
       }, {
         "caption": "4.8.    Confirm that the configuration and layering of the wires is correct (Audible Call Out).",
