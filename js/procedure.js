@@ -369,11 +369,11 @@ var proc = {
       }, {
         "text": "6.3.    Replace the Carburetor Drain Tube",
         "subtasks": [{
-          "caption": "6.3.1.  Insert the unnotched end of the Carburetor Drain Tube into the Generator housing through the left hand hole on the bottom of the casing.",
+          "caption": "6.3.1.  Insert the unflared end of the Carburetor Drain Tube into the Generator housing through the left hand hole on the bottom of the casing.",
           "text": "/img/figures/DrainTube_Replace1.PNG",
           "type": "image_and_text"
         }, {
-          "caption": "6.3.2.  Reattach the notched end of the Carburetor Drain Tube to the fitting on the Carburetor behind the Left Hand Vent Tube.",
+          "caption": "6.3.2.  Reattach the flared end of the Carburetor Drain Tube to the fitting on the Carburetor behind the Left Hand Vent Tube.",
           "text": "/img/figures/DrainTube_Replace2.PNG",
           "type": "image_and_text"
         }, {
