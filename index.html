@@ -5,6 +5,7 @@
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
   <title>Procedure Viewer</title>
   <link rel="stylesheet" href="css/style.css" type="text/css" media="screen, projection">
+  <link rel="shortcut icon" href="#">
   <script src="/mqtt.js"></script>
   <script src="/jquery.min.js"></script>
 </head>
@@ -18,6 +19,11 @@
       <a id="up">Up</a>
       <input id="subjectid">
       <a id="start">Start</a>
+      <select id="procedure">
+        <option value="skillstraining">skillstraining</option>
+        <option value="criticaltask">criticaltask</option>
+      </select>
+      <a id="load">Load</a>
     </div>
     <ul id="expList"></ul>
   </div>
@@ -29,8 +35,6 @@
   var client = mqtt.connect();
 </script>
 
-<script src='js/procedure.js'></script>
 <script src="js/scripts.js"></script>
-<script src="js/StreamSaver.js"></script> <!-- load before streams polyfill to detect support -->
 
 </html>

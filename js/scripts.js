@@ -1,7 +1,7 @@
-/**************************************************************/
-/* Prepares the cv to be dynamically expandable/collapsible   */
-/**************************************************************/
-function prepareList() {
+/*********************************************************************/
+/* Prepares the procedure to be dynamically expandable/collapsible   */
+/*********************************************************************/
+function prepareList(procedure) {
   experimentStarted = false;
 
   const UPKEY = 'w';
@@ -17,21 +17,18 @@ function prepareList() {
     if (experimentStarted) {
       args = Array.prototype.slice.call(arguments);
       data = args.join();
-      // console.log(data);
       client.publish('action', data);
     }
   }
 
+  // Add the classes for collapsing/expanding
   $('#expList')
     .find('li:has(ul)')
-    .click(function(event) {
-      toggle(this);
-    })
     .addClass('collapsed')
     .children('ul')
     .hide();
 
-  //Create the button funtionality
+  // Create the button funtionality
   $('#expandList')
     .unbind('click')
     .click(function() {
@@ -158,12 +155,14 @@ function prepareList() {
     filename = 'subject_' + $('#subjectid').val();
     // If the subject number begins with the number 2 then they can't expand or collapse
     if (filename[8] == '2') {
+      $('#expandList').click()
       canExpand = false;
     }
     client.publish('filename', filename);
 
     $('.listControl').hide();
     experimentStarted = true;
+    data_log(new Date().getTime(), 'loaded procedure' + procedure);
     data_log(new Date().getTime(), 'experiment started');
   };
 
@@ -217,5 +216,16 @@ function prepareList() {
 /* Functions to execute on loading the document               */
 /**************************************************************/
 $(document).ready(function() {
-  prepareList();
+  // Load the selected procedure
+  $('#load')
+    .unbind('click')
+    .click(function() {
+      procedure = $('#procedure').val();
+      $.getScript("js/" + procedure + ".js", function() {
+        $("#procedure").hide();
+        $("#load").hide();
+
+        prepareList(procedure);
+      });
+    });
 });
