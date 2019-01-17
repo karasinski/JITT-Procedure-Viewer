@@ -162,7 +162,7 @@ function prepareList(procedure) {
 
     $('.listControl').hide();
     experimentStarted = true;
-    data_log(new Date().getTime(), 'loaded procedure' + procedure);
+    data_log(new Date().getTime(), 'loaded procedure ' + procedure);
     data_log(new Date().getTime(), 'experiment started');
   };
 
